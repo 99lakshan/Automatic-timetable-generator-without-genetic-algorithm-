@@ -10,13 +10,13 @@ def Get(x , data_new):
             # print(data_new[cols].loc[i])
 
             prio_list.append(data_new.loc[
-                                 [i], ['subject_code', 'lecturer_code', 'day', 'session_no', 'white_board', 'projector',
-                                       'computers', 'capacity']])
+                                 [i], ['CC_CODE', 'LEC_CODE', 'TIME_SLOT1', 'TIME_SLOT2', 'TIME_SLOT3',
+                                       'TIME_SLOT4']])
             # prio_list.append(a)
             count = count + 1
 
     print("count is : ", count)
 
-    arr = np.array(prio_list).reshape(count, 8)
+    arr = np.array(prio_list).reshape(count,6)
 
     return (arr)
