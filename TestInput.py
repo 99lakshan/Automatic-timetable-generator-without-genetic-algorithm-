@@ -40,6 +40,8 @@ data_new['prio_level'] = data2
 
 print(data_new)
 
+#dn thiyenne methana idan hadagena yana eka
 
-print(Get(2 , data_new))
+out = (Get(2 , data_new))
 
+print(out[0][2])
