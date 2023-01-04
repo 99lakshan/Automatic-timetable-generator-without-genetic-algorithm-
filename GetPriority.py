@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 
-def Get(x , data_new):
+
+def Get(x, data_new):
     count = 0
     prio_list = []
     for i in range(0, (len(data_new))):
@@ -17,6 +18,7 @@ def Get(x , data_new):
 
     print("count is : ", count)
 
-    arr = np.array(prio_list).reshape(count,6)
+    arr = np.array(prio_list).reshape(count, 6)
 
     return (arr)
+print(arr)
