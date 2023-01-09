@@ -44,5 +44,5 @@ def inputs(Answer):
     headers = new_DF.iloc[0]
     new_DF = pd.DataFrame(new_DF.values[1:],columns=headers)
 
-    new_DF.to_csv("C:/Users/MSI/Documents/Pycharm/pythonProject1/Data/input2.csv",index=False)
+    new_DF.to_csv("input2.csv",index=False)
     return(new_DF)
