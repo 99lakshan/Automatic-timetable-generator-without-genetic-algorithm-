@@ -21,4 +21,4 @@ def Get(x, data_new):
     arr = np.array(prio_list).reshape(count, 6)
 
     return (arr)
-print(arr)
+
