@@ -31,10 +31,10 @@ def inputs(Answer):
         TS2_list.append(TS2)
         TS3 = str(input("Enter your Preffered 3rd time slot : "))
         TS3_list.append(TS3)
-        TS4 = str(input("Enter your Preffered 4th time slot : "))
-        TS4_list.append(TS4)
+#        TS4 = str(input("Enter your Preffered 4th time slot : "))
+#        TS4_list.append(TS4)
 
-    Input_table = [CC_list,LC_list,TS1_list,TS2_list,TS3_list,TS4_list]
+    Input_table = [CC_list,LC_list,TS1_list,TS2_list,TS3_list]
     #print(Input_table)
 
     DF = pd.DataFrame(Input_table)
