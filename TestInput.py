@@ -34,14 +34,20 @@ for i in range(0, (len(input2))):
     if data in d:
         data2.append(d[data])
 
-print(data2)
+#print(data2)
 data_new = input2.copy()
 data_new['prio_level'] = data2
 
 print(data_new)
 
 #dn thiyenne methana idan hadagena yana eka
+#anthimata ekama dawase ekama welawe than dekaka lectures dekk thiyenna ba. eka check wenna one aniwaryen. eka blnna puluwn subject code ekaka palaweni string 4ren. EX- GTEC1, ETMP3,ETIA3
+#MO_M3 ekk danawa pya3 session ekakata. ehema ekk dammoth M0_M1 ekai MO_M2 ekai dekama damma wage wena widiyat hadanna wenwa
 
-out = (Get(2 , data_new))
 
-print(out[0][2])
+
+
+#for j in range(0,len(lec_detail)):
+#    for k in range (1,36):
+#        out = (Get(k , data_new))
+#        print(out[0][j])

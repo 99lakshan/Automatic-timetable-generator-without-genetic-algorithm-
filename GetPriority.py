@@ -10,8 +10,7 @@ def Get(x , data_new):
             # print(data_new[cols].loc[i])
 
             prio_list.append(data_new.loc[
-                                 [i], ['CC_CODE', 'LEC_CODE', 'TIME_SLOT1', 'TIME_SLOT2', 'TIME_SLOT3',
-                                       'TIME_SLOT4']])
+                                 [i], ['CC_CODE', 'LEC_CODE', 'TIME_SLOT1', 'TIME_SLOT2', 'TIME_SLOT3']])
             # prio_list.append(a)
             count = count + 1
 
