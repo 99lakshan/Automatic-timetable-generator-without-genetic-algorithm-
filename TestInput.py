@@ -10,8 +10,8 @@ else:
     pass
 
 input2 = pd.read_csv("Data/input2.csv")
-#print(input2)
-#print(input2['LEC_CODE'][0])
+# print(input2)
+# print(input2['LEC_CODE'][0])
 lec_detail = pd.read_csv("Data/instructors1.csv")
 #print(lec_detail)
 
@@ -45,9 +45,29 @@ print(len(lec_detail))
 
 
 
-
+#sam_list = []
+#sub = []
 for j in range(1,(len(lec_detail)+1)):
     print(j)
     out = (Get(j, data_new))
 
-    print(out)
+    if len(out) == 0:
+        #print("This is empty")
+        continue
+
+    pp = out.tolist()
+    print(pp)
+
+    for k in range (0,len(out)):
+        p1 = pp[k][0]
+
+        if p1[4] == '1':
+            print("First year : ", p1)
+
+        if p1[4] == '2':
+            print("Second year : ", p1)
+
+        if p1[4] == '3':
+            print("Third year : ", p1)
+
+
