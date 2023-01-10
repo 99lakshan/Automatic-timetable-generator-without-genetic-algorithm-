@@ -1,7 +1,7 @@
 import pandas as pd
 from GetPriority import *
 from Enterinputs import *
-from get_capacity import *
+from GetCapacity import *
 
 Answer = str(input("Do you want to enter your data :(y/n) : "))
 
@@ -75,3 +75,5 @@ for j in range(1, (len(lec_detail) + 1)):
             print("Third year : ", sub_code)
 '''
 # updaated
+
+#sub table ekat e lec eka lab da normal da kiyl add krmu ethakota data gnna lesi Ex- PB, CL, PL
