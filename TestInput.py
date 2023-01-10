@@ -58,13 +58,17 @@ for j in range(1, (len(lec_detail) + 1)):
         continue
 
     pp = out.tolist()
-    # print(pp)
+    print(pp)
 
     for k in range(0, len(out)):
         sub_code = pp[k][0]
         print(sub_code)
+
         cap = (capacity(sub_code))
         print(cap)
+
+        blockType = (block(sub_code))
+        print(blockType)
 '''     if sub_code[4] == '1':
             print("First year : ", sub_code)
 
