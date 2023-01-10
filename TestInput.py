@@ -61,7 +61,7 @@ for j in range(1,(len(lec_detail)+1)):
     for k in range (0,len(out)):
         sub_code = pp[k][0]
 
-        if sub_code[4] == '1':
+'''     if sub_code[4] == '1':
             print("First year : ", sub_code)
 
         if sub_code[4] == '2':
@@ -69,5 +69,5 @@ for j in range(1,(len(lec_detail)+1)):
 
         if sub_code[4] == '3':
             print("Third year : ", sub_code)
-# updated_1
+'''
 
