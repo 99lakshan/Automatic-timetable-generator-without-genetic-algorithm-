@@ -1,77 +1,77 @@
-﻿Course_Code,Course_Name
-GTEC11013,Mathematics For Technology-I
-GTEC11023,Physics for Technology-I
-GTEC13032,Projects For Technology-I
-GTEC11041,Engineering Drawing with CAD-I
-GTEC11072,Physics for Technology Laboratary-I
-DELT13522,English For Computing and Technology
-CTEC11052,Structured Programming-I
-CTEC11063,Computer System Organization
-ETEC11052,Introduction to Programming for Technology
-ETEC11063,Chemistry for technology
-CSCI11014,Mathematics for Computer Science-I
-CSCI11023,Fundamentals of Statistics
-CSCI11032,Structured Programming-I
-CSCI11042,Fundamentals of Digital Electronics
-CSCI11052,Web Fundamentals
-CSCI11062,Introduction to Database Management System
-CSCI11072,Foundations in Computer Science
-GTEC21023,Fundamentals of Electronics
-GTEC23032,Projects in Technology-II
-ETEC21013,Applied Calculus-I
-ETEC21043,Engineering Materials-I
-ETEC21053,Manufacturing Processes
-ETEC21062,Object Oriented Programming For Engineering Technology
-CTEC21043,Mathematics For Technology-III
-CTEC21042,Web Programming-I
-CTEC21052,Introduction to Cyber Security
-CTEC21063,Database System
-LNPR21072,Japanese Language-I
-DELT21512,English for The World
-CSCI21013,Statistical Inference
-CSCI21023,Data Communication and Networks
-CSCI21033,Data Structures and Algorithms
-CSCI21042,Software Engineering
-CSCI21052,Object Oriented Programming-I
-CSCI21062,Advanced Database Management System
-CSCI21072,Group Project
-MGMT21012,Principles of Management
-ETEC31013,Programming in Python for Engineering Technology
-ETEC31023,Fluid Mechanics and Fluid Systems
-ETEC31033,Mechanics of Machines
-ETMP31213,Chemical Process Technology
-ETMP31223,Engineering Materials-II
-ETIA31413,Introduction to Industrial Automation 
-ETIA31423,Introduction to Microprocessors and Embedded Systems
-ETST31613,Hydrology and Hidrogeology with Lab
+﻿Course_Code,Course_Name,capacity
+GTEC11013,Mathematics For Technology-I,200
+GTEC11023,Physics for Technology-I,200
+GTEC13032,Projects For Technology-I,200
+GTEC11041,Engineering Drawing with CAD-I,100
+GTEC11072,Physics for Technology Laboratary-I,100
+DELT13522,English For Computing and Technology,200
+CTEC11052,Structured Programming-I,100
+CTEC11063,Computer System Organization,100
+ETEC11052,Introduction to Programming for Technology,100
+ETEC11063,Chemistry for technology,100
+CSCI11014,Mathematics for Computer Science-I,100
+CSCI11023,Fundamentals of Statistics,100
+CSCI11032,Structured Programming-I,100
+CSCI11042,Fundamentals of Digital Electronics,100
+CSCI11052,Web Fundamentals,100
+CSCI11062,Introduction to Database Management System,100
+CSCI11072,Foundations in Computer Science,100
+GTEC21023,Fundamentals of Electronics,200
+GTEC23032,Projects in Technology-II,200
+ETEC21013,Applied Calculus-I,100
+ETEC21043,Engineering Materials-I,100
+ETEC21053,Manufacturing Processes,100
+ETEC21062,Object Oriented Programming For Engineering Technology,10
+CTEC21043,Mathematics For Technology-III,100
+CTEC21042,Web Programming-I,100
+CTEC21052,Introduction to Cyber Security,100
+CTEC21063,Database System,100
+LNPR21072,Japanese Language-I,100
+DELT21512,English for The World,200
+CSCI21013,Statistical Inference,100
+CSCI21023,Data Communication and Networks,100
+CSCI21033,Data Structures and Algorithms,100
+CSCI21042,Software Engineering,100
+CSCI21052,Object Oriented Programming-I,100
+CSCI21062,Advanced Database Management System,100
+CSCI21072,Group Project,100
+MGMT21012,Principles of Management,100
+ETEC31013,Programming in Python for Engineering Technology,10
+ETEC31023,Fluid Mechanics and Fluid Systems,200
+ETEC31033,Mechanics of Machines,100
+ETMP31213,Chemical Process Technology,35
+ETMP31223,Engineering Materials-II,35
+ETIA31413,Introduction to Industrial Automation ,40
+ETIA31423,Introduction to Microprocessors and Embedded Systems,40
+ETST31613,Hydrology and Hidrogeology with Lab,25
 ETST31623,Conventional and Alternative Energy Resources
-ENPR33033,Innovations to Market
-CTEC31013,Web Programming-II
-CTEC31023,Mobile Application Development
-CTEC31032,ICT for Business
-CTEC31042,Python Programming
-CTNT31012,Introduction to Telecommunication
-CTNT31022,Wireless and Mobile Communication
-GANI31012,Data Structures for Game Development
-GANI31022,Introduction to 3D Modelling
-GANI31032,Game Design and Development
-SWST31022,Requrements Engineering
-SWST31032,Applied Infromation System
-ENPR31042,Principles andPractices of Technology Management
-CSCI31014,Mathematics for Computer Science-III
-CSCI31022,Machine Learning and Pattern Recognition
-CSCI31032,Theory of Programming Languages
-CSCI31042,Advanced Data Structures and Algorithms
-CSCI31052,Project Management
-CSCI31062,Sementic Web and Ontological Modeling
-CSCI31072,Python Programming 
-CSCI31082,Systems and Network Administration
-CSEC31012,Applied Cryptography
-CSEC31022,Data and Systems Security
-AINT31012,Natural Language Processing 
-AINT31022,Deductive Reasoning and Logic Programming
-SCOM31013,Numerical Analysisand Scientific Programming
-SCOM31022,Scientific Visualization 
-SCOM31032,Mathematical Modeling
-DELT33212,English for Professional Purposes
-MGMT31012,Introduction to Entrepreneurship
+ENPR33033,Innovations to Market,25
+CTEC31013,Web Programming-II,100
+CTEC31023,Mobile Application Development,100
+CTEC31032,ICT for Business,100
+CTEC31042,Python Programming,100
+CTNT31012,Introduction to Telecommunication,35
+CTNT31022,Wireless and Mobile Communication,35
+GANI31012,Data Structures for Game Development,35
+GANI31022,Introduction to 3D Modelling,35
+GANI31032,Game Design and Development,35
+SWST31022,Requrements Engineering,30
+SWST31032,Applied Infromation System,30
+ENPR31042,Principles andPractices of Technology Management,100
+CSCI31014,Mathematics for Computer Science-III,100
+CSCI31022,Machine Learning and Pattern Recognition,100
+CSCI31032,Theory of Programming Languages,100
+CSCI31042,Advanced Data Structures and Algorithms,100
+CSCI31052,Project Management,100
+CSCI31062,Sementic Web and Ontological Modeling,100
+CSCI31072,Python Programming,100 
+CSCI31082,Systems and Network Administration,100
+CSEC31012,Applied Cryptography,35
+CSEC31022,Data and Systems Security,35
+AINT31012,Natural Language Processing ,35
+AINT31022,Deductive Reasoning and Logic Programming,35
+SCOM31013,Numerical Analysisand Scientific Programming,30
+SCOM31022,Scientific Visualization ,30
+SCOM31032,Mathematical Modeling,30
+DELT33212,English for Professional Purposes,100
+MGMT31012,Introduction to Entrepreneurship,100
