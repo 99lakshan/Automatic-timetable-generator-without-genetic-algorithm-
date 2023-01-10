@@ -59,15 +59,15 @@ for j in range(1,(len(lec_detail)+1)):
     print(pp)
 
     for k in range (0,len(out)):
-        p1 = pp[k][0]
+        sub_code = pp[k][0]
 
-        if p1[4] == '1':
-            print("First year : ", p1)
+        if sub_code[4] == '1':
+            print("First year : ", sub_code)
 
-        if p1[4] == '2':
-            print("Second year : ", p1)
+        if sub_code[4] == '2':
+            print("Second year : ", sub_code)
 
-        if p1[4] == '3':
-            print("Third year : ", p1)
-# updated
+        if sub_code[4] == '3':
+            print("Third year : ", sub_code)
+# updated_1
 
