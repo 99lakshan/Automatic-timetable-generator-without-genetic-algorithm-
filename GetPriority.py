@@ -12,10 +12,10 @@ def Get(x, data_new):
 
             prio_list.append(data_new.loc[
                                  [i], ['CC_CODE', 'LEC_CODE', 'TIME_SLOT1', 'TIME_SLOT2', 'TIME_SLOT3']])
-            #prio_list.append(a)
+            # prio_list.append(a)
             count = count + 1
 
-    #print("count is : ", count)
+    print("count is : ", count)
 
     arr = np.array(prio_list).reshape(count, 5)
 
