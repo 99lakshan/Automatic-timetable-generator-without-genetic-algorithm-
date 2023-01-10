@@ -70,4 +70,5 @@ for j in range(1,(len(lec_detail)+1)):
         if sub_code[4] == '3':
             print("Third year : ", sub_code)
 '''
+#updaated
 
