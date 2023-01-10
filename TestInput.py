@@ -69,5 +69,5 @@ for j in range(1,(len(lec_detail)+1)):
 
         if p1[4] == '3':
             print("Third year : ", p1)
-
+# updated
 
