@@ -67,14 +67,14 @@ for j in range(1, (len(lec_detail) + 1)):
         blockType = (block(sub_code))
         # print(blockType)
 
-        book_room = (room(cap, blockType, pp))
-        #print(book_room)
+        book_room = (room(cap, blockType))
+        # print(book_room)
         book_room_L1 = book_room[0]
 
         book_room_L2 = book_room[1]
         # print(type(book_room_L1))
-        #print("book_room_L1 : ", book_room_L1)
-        #print("book_room_L2 : ", book_room_L2)
+        # print("book_room_L1 : ", book_room_L1)
+        # print("book_room_L2 : ", book_room_L2)
         # print(type(book_room_L2[0]))
 
         sorting = sort(book_room_L1, book_room_L2)
