@@ -73,8 +73,8 @@ for j in range(1, (len(lec_detail) + 1)):
 
         book_room_L2 = book_room[1]
         # print(type(book_room_L1))
-        # print("book_room_L1 : ", book_room_L1)
-        # print("book_room_L2 : ", book_room_L2)
+        print("book_room_L1 : ", book_room_L1)
+        print("book_room_L2 : ", book_room_L2)
         # print(type(book_room_L2[0]))
 
         sorting = sort(book_room_L1, book_room_L2)
@@ -87,20 +87,37 @@ for j in range(1, (len(lec_detail) + 1)):
 
         print("---------------------------------------------------------------------------")
 
-fy = (storing[0])
-sy = (storing[1])
-ty = (storing[2])
+fyct = (storing[0])
+fyet = (storing[1])
+fycs = (storing[2])
+syct = (storing[4])
+syet = (storing[5])
+sycs = (storing[6])
 
-df_fy = pd.DataFrame(fy)
+# print('  First_year_CT', "\n", fyct, "\n", 'First_year_ET', "\n", fyet, "\n", 'First_year_CS', "\n", fycs, '\n')
+# print(syct, "\n", syet, "\n", sycs)
+
+df_fy_ct = pd.DataFrame(fyct)
+df_fy_et = pd.DataFrame(fyet)
+df_fy_cs = pd.DataFrame(fycs)
 # df_fy = df_fy.T
 
-df_sy = pd.DataFrame(sy)
+df_sy_ct = pd.DataFrame(syct)
+df_sy_et = pd.DataFrame(syet)
+df_sy_cs = pd.DataFrame(sycs)
+
 # df_sy = df_sy.T
 
-df_ty = pd.DataFrame(ty)
+#df_ty = pd.DataFrame(ty)
 # df_ty = df_ty.T
 
 pd.options.display.max_columns = None
 pd.options.display.width = 1000
 
-print("First year\n", df_fy, "\n\n","Second year\n", df_sy, "\n\n", "Third year\n", df_ty)
+print('  First_year_CT', "\n", df_fy_ct, "\n", 'First_year_ET', "\n", df_fy_et, "\n", 'First_year_CS', "\n", df_fy_cs, '\n')
+
+print("_________________________________________________________________________________________________________________________________________")
+print('Second_year_CT', '\n', df_sy_ct, "\n", 'Second_year_ET', '\n', df_sy_et, "\n", 'Second_year_CS', '\n', df_sy_cs)
+
+
+
