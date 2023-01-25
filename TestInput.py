@@ -52,11 +52,11 @@ for j in range(1, (len(lec_detail) + 1)):
         continue
 
     pp = out.tolist()                               # pp - input detail table
-    print(pp)
+    #print(pp)
 
     for k in range(0, len(pp)):
         detail_row = pp[k]                          # selected  one raw from the input detail table
-        print(detail_row)
+        #print(detail_row)
 
         sub_code = pp[k][0]
         # print(sub_code)
@@ -68,24 +68,24 @@ for j in range(1, (len(lec_detail) + 1)):
         # print(blockType)
 
         book_room = (room(cap, blockType, pp))
-        print(book_room)
+        #print(book_room)
         book_room_L1 = book_room[0]
 
         book_room_L2 = book_room[1]
         # print(type(book_room_L1))
-        print("book_room_L1 : ", book_room_L1)
-        print("book_room_L2 : ", book_room_L2)
+        #print("book_room_L1 : ", book_room_L1)
+        #print("book_room_L2 : ", book_room_L2)
         # print(type(book_room_L2[0]))
 
         sorting = sort(book_room_L1, book_room_L2)
-        print(sorting)
+        #print(sorting)
 
         storing = store(book_room_L1, book_room_L2, detail_row)
 
-        print("book room no. : ", book_room_L1)
+        #print("book room no. : ", book_room_L1)
         # print("book room cap : ", book_room_L2, "\n")
 
-        print("---------------------------------------------------------------------------")
+        #print("---------------------------------------------------------------------------")
 
 fyct = (storing[0])
 fyet = (storing[1])

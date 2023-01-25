@@ -57,7 +57,7 @@ def store(book_room_L1, book_room_L2, detail_raw):
 
     for j in range(0,
                    len(book_room_L1)):  # hall number eka gnne meken ekin eka  # onna list eken eka hall no ekk gaththa
-        print(book_room_L2)
+        #print(book_room_L2)
         hall_id = str(book_room_L1[j])
 
         for k in range(2, 5):
@@ -80,7 +80,7 @@ def store(book_room_L1, book_room_L2, detail_raw):
 
             halls_list_value = globals()[hall_id][day_position][slot_position]
             g = str(year_name + '_' + degree_programme)
-            print(g)
+            #print(g)
             years_list_value = globals()[g][day_position][slot_position]
 
             if year_name != 'third_year':
@@ -96,7 +96,7 @@ def store(book_room_L1, book_room_L2, detail_raw):
                         if years_list_value == 0:
                             globals()[hall_id][day_position][slot_position] = detail_raw[0] + h + hall_id
                             d = str(year_name + '_' + degree_programme)
-                            print(d)
+                            #print(d)
                             globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
                             num = num + 1
 
