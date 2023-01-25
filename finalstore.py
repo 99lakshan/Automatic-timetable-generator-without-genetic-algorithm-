@@ -153,9 +153,3 @@ def store(book_room_L1, book_room_L2, detail_raw):
             #    for count in range(0,1):
 
     return first_year_CT, first_year_ET, first_year_CS, first_year_GT, second_year_CT, second_year_ET, second_year_CS, second_year_GT  # continue from there
-
-# methanin ehat krna ona dewal
-
-#  - credit ganat lecture kiyk watenna oned kiyl check krnna one eka dala thiyenne  e unat wada na
-#  - e slot eka wen wela thiyanawanm e wenuwat that ekk assign krnna one.
-################################################################################# 3rd yr ekedi hall eka mulin check krl ita passe yra list eka check krnna
