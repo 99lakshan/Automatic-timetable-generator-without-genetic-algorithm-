@@ -1,7 +1,7 @@
-import pandas as pd
 from GetPriority import *
 from Enterinputs import *
 from GetCapacity import *
+from finalstore import *
 
 Answer = str(input("Do you want to enter your data :(y/n) : "))
 
@@ -38,46 +38,69 @@ for i in range(0, (len(input2))):
 data_new = input2.copy()
 data_new['prio_level'] = data2
 
-print(data_new)
+# print(data_new)
 # print(len(lec_detail))
-
-
-# dn thiyenne methana idan hadagena yana eka
-# anthimata ekama dawase ekama welawe than dekaka lectures dekk thiyenna ba. eka check wenna one aniwaryen. eka blnna puluwn subject code ekaka palaweni string 4ren. EX- GTEC1, ETMP3,ETIA3
-# MO_M3 ekk danawa pya3 session ekakata. ehema ekk dammoth M0_M1 ekai MO_M2 ekai dekama damma wage wena widiyat hadanna wenwa
-
 
 # sam_list = []
 # sub = []
 for j in range(1, (len(lec_detail) + 1)):
     # print(j)
     out = (Get(j, data_new))
-
+    # print(out)
     if len(out) == 0:
         # print("This is empty")
         continue
 
-    pp = out.tolist()
+    pp = out.tolist()                               # pp - input detail table
     print(pp)
 
-    for k in range(0, len(out)):
+    for k in range(0, len(pp)):
+        detail_row = pp[k]                          # selected  one raw from the input detail table
+        print(detail_row)
+
         sub_code = pp[k][0]
-        print(sub_code)
+        # print(sub_code)
 
         cap = (capacity(sub_code))
-        print(cap)
+        # print(cap)
 
         blockType = (block(sub_code))
-        print(blockType)
-'''     if sub_code[4] == '1':
-            print("First year : ", sub_code)
+        # print(blockType)
 
-        if sub_code[4] == '2':
-            print("Second year : ", sub_code)
+        book_room = (room(cap, blockType, pp))
+        print(book_room)
+        book_room_L1 = book_room[0]
 
-        if sub_code[4] == '3':
-            print("Third year : ", sub_code)
-'''
-# updaated
+        book_room_L2 = book_room[1]
+        # print(type(book_room_L1))
+        # print("book_room_L1 : ", book_room_L1)
+        # print("book_room_L2 : ", book_room_L2)
+        # print(type(book_room_L2[0]))
 
-#sub table ekat e lec eka lab da normal da kiyl add krmu ethakota data gnna lesi Ex- PB, CL, PL
+        sorting = sort(book_room_L1, book_room_L2)
+        print(sorting)
+
+        storing = store(book_room_L1, book_room_L2, detail_row)
+
+        print("book room no. : ", book_room_L1)
+        # print("book room cap : ", book_room_L2, "\n")
+
+        print("---------------------------------------------------------------------------")
+
+fy = (storing[0])
+sy = (storing[1])
+ty = (storing[2])
+
+df_fy = pd.DataFrame(fy)
+# df_fy = df_fy.T
+
+df_sy = pd.DataFrame(sy)
+# df_sy = df_sy.T
+
+df_ty = pd.DataFrame(ty)
+# df_ty = df_ty.T
+
+pd.options.display.max_columns = None
+pd.options.display.width = 1000
+
+print("First year\n", df_fy, "\n\n","Second year\n", df_sy, "\n\n", "Third year\n", df_ty)

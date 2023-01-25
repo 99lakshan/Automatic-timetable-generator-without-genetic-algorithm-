@@ -29,3 +29,5 @@ six @ file:///tmp/build/80754af9/six_1644875935023/work
 tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
 traitlets @ file:///croot/traitlets_1671143879854/work
 urllib3 @ file:///croot/urllib3_1670526988650/work
+
+docx~=0.2.4
