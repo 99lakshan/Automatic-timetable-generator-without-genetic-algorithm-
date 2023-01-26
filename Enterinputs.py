@@ -46,4 +46,3 @@ def inputs(Answer):
 
     new_DF.to_csv("input2.csv", index=False)
     return new_DF
-
