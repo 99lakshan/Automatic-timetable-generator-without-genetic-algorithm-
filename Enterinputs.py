@@ -8,6 +8,7 @@ TS1_list = ['TIME_SLOT1']
 TS2_list = ['TIME_SLOT2']
 TS3_list = ['TIME_SLOT3']
 
+
 def inputs(Answer):
     day = pd.read_csv("Data/Day_arrangement.csv")
     print("This is the time slot table that you have to type below in exact same arrangement as in the table\n", day)
