@@ -1,42 +1,42 @@
-first_year_CT = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-first_year_ET = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-first_year_CS = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-first_year_GT = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+first_year_CT = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+first_year_ET = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+first_year_CS = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+first_year_GT = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
 
-second_year_CT = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-second_year_ET = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-second_year_CS = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-second_year_GT = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+second_year_CT = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+second_year_ET = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+second_year_CS = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+second_year_GT = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
 
 third_year = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 
-PR001 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR002 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR003 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR004 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR005 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR006 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR007 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR008 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PR009 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CL001 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CL002 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CL003 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CL004 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CL005 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CH001 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-CH002 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PH001 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PH002 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-PH003 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+PR001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR003 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR004 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR005 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR006 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR007 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR008 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PR009 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CL001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CL002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CL003 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CL004 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CL005 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CH001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+CH002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PH001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PH002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+PH003 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
 
 
 def store(book_room_L1, book_room_L2, detail_raw):
     global year_name
     num = 1
     h = ' / '
-    day = ['MO', 'TU', 'WE', 'TH', 'FR']
-    slot = ['M1', 'M2', 'A1', 'A2']
+    day = ['0', 'MO', 'TU', 'WE', 'TH', 'FR']
+    slot = ['0', 'M1', 'M2', 'A1', 'A2']
     year = ['first_year', 'second_year', 'third_year']
 
     yr_no = int(detail_raw[0][4])
@@ -45,7 +45,7 @@ def store(book_room_L1, book_room_L2, detail_raw):
 
     credit = int(detail_raw[0][8])
 
-    if credit > 3:
+    '''if credit > 3:
         credit = 3
 
     if credit == 3:
@@ -53,10 +53,9 @@ def store(book_room_L1, book_room_L2, detail_raw):
     if credit > 3:
         i = 2
     if credit < 3:
-        i = 1
+        i = 1'''
 
-    for j in range(0,
-                   len(book_room_L1)):  # hall number eka gnne meken ekin eka  # onna list eken eka hall no ekk gaththa
+    for j in range(0, len(book_room_L1)):  # get the hall one by one from the list
         # print(book_room_L2)
         hall_id = str(book_room_L1[j])
 
@@ -70,10 +69,10 @@ def store(book_room_L1, book_room_L2, detail_raw):
 
             elif yr_no == 3:
                 year_name = year[2]
-                continue  # temperary adding delete later
+                continue  # temporary adding delete later
 
-            dy = detail_raw[k][:2]  # meken piliwelat time slot 3na ekin eka gnnawa #dn eka time slot ekk gaththa
-            sl = detail_raw[k][3:]  # e time slot eken day ekai slot ekai extract kr gaththa
+            dy = detail_raw[k][:2]  # get the day one by one at a once from the detail raw
+            sl = detail_raw[k][3:]  # get the time slot one by one at a once
 
             day_position = day.index(dy)
             slot_position = slot.index(sl)
@@ -152,4 +151,4 @@ def store(book_room_L1, book_room_L2, detail_raw):
             # if credit<3:
             #    for count in range(0,1):
 
-    return first_year_CT, first_year_ET, first_year_CS, first_year_GT, second_year_CT, second_year_ET, second_year_CS, second_year_GT  # continue from there
+    return first_year_CT, first_year_ET, first_year_CS, first_year_GT, second_year_CT, second_year_ET, second_year_CS # continue from there

@@ -1,3 +1,5 @@
+from openpyxl import Workbook
+
 from GetPriority import *
 from Enterinputs import *
 from GetCapacity import *
@@ -51,12 +53,12 @@ for j in range(1, (len(lec_detail) + 1)):
         # print("This is empty")
         continue
 
-    pp = out.tolist()                               # pp - input detail table
-    #print(pp)
+    pp = out.tolist()  # pp - input detail table
+    # print(pp)
 
     for k in range(0, len(pp)):
-        detail_row = pp[k]                          # selected  one raw from the input detail table
-        #print(detail_row)
+        detail_row = pp[k]  # selected  one raw from the input detail table
+        # print(detail_row)
 
         sub_code = pp[k][0]
         # print(sub_code)
@@ -78,14 +80,14 @@ for j in range(1, (len(lec_detail) + 1)):
         # print(type(book_room_L2[0]))
 
         sorting = sort(book_room_L1, book_room_L2)
-        #print(sorting)
+        # print(sorting)
 
         storing = store(book_room_L1, book_room_L2, detail_row)
 
-        #print("book room no. : ", book_room_L1)
+        # print("book room no. : ", book_room_L1)
         # print("book room cap : ", book_room_L2, "\n")
 
-        #print("---------------------------------------------------------------------------")
+        # print("---------------------------------------------------------------------------")
 
 fyct = (storing[0])
 fyet = (storing[1])
@@ -100,24 +102,25 @@ sycs = (storing[6])
 df_fy_ct = pd.DataFrame(fyct)
 df_fy_et = pd.DataFrame(fyet)
 df_fy_cs = pd.DataFrame(fycs)
-# df_fy = df_fy.T
 
 df_sy_ct = pd.DataFrame(syct)
 df_sy_et = pd.DataFrame(syet)
 df_sy_cs = pd.DataFrame(sycs)
 
-# df_sy = df_sy.T
-
-#df_ty = pd.DataFrame(ty)
-# df_ty = df_ty.T
+with pd.ExcelWriter("TimeTable.xlsx") as writer:
+    df_fy_ct.to_excel(writer, sheet_name='First_year_CT')
+    df_fy_et.to_excel(writer, sheet_name="First_year_ET")
+    df_fy_cs.to_excel(writer, sheet_name='First_year_CS')
+    df_sy_ct.to_excel(writer, sheet_name='Second_year_CT')
+    df_sy_et.to_excel(writer, sheet_name='Second_year_ET')
+    df_sy_cs.to_excel(writer, sheet_name='Second_year_CS')
 
 pd.options.display.max_columns = None
 pd.options.display.width = 1000
 
-print('  First_year_CT', "\n", df_fy_ct, "\n", 'First_year_ET', "\n", df_fy_et, "\n", 'First_year_CS', "\n", df_fy_cs, '\n')
+print('  First_year_CT', "\n", df_fy_ct, "\n", 'First_year_ET', "\n", df_fy_et, "\n", 'First_year_CS', "\n", df_fy_cs,
+      '\n')
 
-print("_________________________________________________________________________________________________________________________________________")
+print("_____________________________________________________________________________________________________________")
+
 print('Second_year_CT', '\n', df_sy_ct, "\n", 'Second_year_ET', '\n', df_sy_et, "\n", 'Second_year_CS', '\n', df_sy_cs)
-
-
-
