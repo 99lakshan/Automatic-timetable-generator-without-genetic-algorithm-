@@ -1,6 +1,3 @@
-# DELT EK BLNNA PODDAK
-
-# FIRST YEAR COURSES
 
 first_year_CTEC = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'],
                    [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],

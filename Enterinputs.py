@@ -7,8 +7,6 @@ LC_list = ['LEC_CODE']
 TS1_list = ['TIME_SLOT1']
 TS2_list = ['TIME_SLOT2']
 TS3_list = ['TIME_SLOT3']
-TS4_list = ['TIME_SLOT4']
-
 
 def inputs(Answer):
     day = pd.read_csv("Data/Day_arrangement.csv")
@@ -16,7 +14,7 @@ def inputs(Answer):
 
     print("\ntype 0 in Course code if you finish the process\n")
 
-    for i in range(0, 100):
+    for i in range(0, 1000):
         CC = str(input("Enter your Course Code : "))
         if CC == "0":
             break

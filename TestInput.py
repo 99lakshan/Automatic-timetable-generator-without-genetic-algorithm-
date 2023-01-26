@@ -168,5 +168,3 @@ print('  First_year_CT', "\n", df_fy_ct, "\n", 'First_year_ET', "\n", df_fy_et, 
 print("_____________________________________________________________________________________________________________")
 
 print('Second_year_CT', '\n', df_sy_ct, "\n", 'Second_year_ET', '\n', df_sy_et, "\n", 'Second_year_CS', '\n', df_sy_cs)
-
-
