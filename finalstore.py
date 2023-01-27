@@ -1,4 +1,3 @@
-
 first_year_CTEC = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'],
                    [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],
                    ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
@@ -87,44 +86,18 @@ third_year_MGMT = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm',
                    [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],
                    ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
 
-PR001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR003 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR004 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR005 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR006 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR007 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR008 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PR009 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CL001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CL002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CL003 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CL004 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CL005 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CH001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-CH002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PH001 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PH002 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-PH003 = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0],
-         ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+
+# [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+
+
+def create_list_if_not_exist(list_name):
+    if list_name not in globals():
+        globals()[list_name] = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'],
+                                [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],
+                                ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+        print("The list '" + list_name + "' has been created.")
+    else:
+        print("The list '" + list_name + "' already exists.")
 
 
 def store(book_room_L1, book_room_L2, detail_raw):
@@ -141,19 +114,11 @@ def store(book_room_L1, book_room_L2, detail_raw):
 
     credit = int(detail_raw[0][8])
 
-    '''if credit > 3:
-        credit = 3
-
-    if credit == 3:
-        i = 2
-    if credit > 3:
-        i = 2
-    if credit < 3:
-        i = 1'''
-
     for j in range(0, len(book_room_L1)):  # get the hall one by one from the list
         # print(book_room_L2)
         hall_id = str(book_room_L1[j])
+
+        create_list_if_not_exist(hall_id)
 
         for k in range(2, 5):
 
@@ -311,7 +276,7 @@ def store(book_room_L1, book_room_L2, detail_raw):
                                 globals()[b][day_position][slot_position] = detail_raw[0] + h + hall_id
                                 globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
 
-                                d = str(year_name + '_' + degree_programme)
+                                # d = str(year_name + '_' + degree_programme)
                                 # globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
 
                                 num = num + 1
@@ -339,7 +304,7 @@ def store(book_room_L1, book_room_L2, detail_raw):
                                 globals()[o][day_position][slot_position] = detail_raw[0] + h + hall_id
                                 globals()[u][day_position][slot_position] = detail_raw[0] + h + hall_id
 
-                                d = str(year_name + '_' + degree_programme)
+                                # d = str(year_name + '_' + degree_programme)
                                 # globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
 
                                 num = num + 1
