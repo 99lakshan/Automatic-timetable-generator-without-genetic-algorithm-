@@ -135,15 +135,17 @@ df_ty_aint = pd.DataFrame(ty_aint)
 df_ty_dsci = pd.DataFrame(ty_dsci)
 df_ty_scom = pd.DataFrame(ty_scom)
 
-with pd.ExcelWriter("TimeTable.xlsx") as writer:
+with pd.ExcelWriter("TimeTable (First_Year).xlsx") as writer:
     df_fy_ct.to_excel(writer, sheet_name='First_year_CTEC')
     df_fy_et.to_excel(writer, sheet_name="First_year_ETEC")
     df_fy_cs.to_excel(writer, sheet_name='First_year_CSCI')
 
+with pd.ExcelWriter("TimeTable (Second_Year).xlsx") as writer:
     df_sy_ct.to_excel(writer, sheet_name='Second_year_CTEC')
     df_sy_et.to_excel(writer, sheet_name='Second_year_ETEC')
     df_sy_cs.to_excel(writer, sheet_name='Second_year_CSCI')
 
+with pd.ExcelWriter("TimeTable (Third_Year).xlsx") as writer:
     df_ty_ctnt.to_excel(writer, sheet_name='Third_year_CTNT')
     df_ty_gani.to_excel(writer, sheet_name='Third_year_GANI')
     df_ty_swst.to_excel(writer, sheet_name='Third_year_SWST')
