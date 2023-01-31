@@ -13,7 +13,7 @@ else:
     pass
 
 input2 = pd.read_csv("Data/input2.csv")
-# print(input2)
+print(input2)
 # print(input2['LEC_CODE'][0])
 lec_detail = pd.read_csv("Data/instructors1.csv")
 # print(lec_detail)
@@ -81,7 +81,7 @@ for j in range(1, (len(lec_detail) + 1)):
         sorting = sort(book_room_L1, book_room_L2)
         # print(sorting)
 
-        storing = store(book_room_L1, book_room_L2, detail_row)
+        storing = store(book_room_L1, detail_row)
 
         # print("book room no. : ", book_room_L1)
         # print("book room cap : ", book_room_L2, "\n")
