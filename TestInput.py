@@ -12,7 +12,7 @@ if Answer == "y":
 else:
     pass
 
-input2 = pd.read_csv("Data/input2.csv")
+input2 = pd.read_csv("input2.csv")
 print(input2)
 # print(input2['LEC_CODE'][0])
 lec_detail = pd.read_csv("Data/instructors1.csv")

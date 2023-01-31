@@ -16,6 +16,9 @@ def inputs(Answer):
 
     print("\ntype 0 in Course code if you finish the process\n")
 
+    print("\nThis is the already existing data in the table\n")
+    print(pd.read_csv("input2.csv"))
+
     for i in range(0, 1000):
         CC = str(input("Enter your Course Code : "))
         if CC == "0":
@@ -44,5 +47,11 @@ def inputs(Answer):
     headers = new_DF.iloc[0]
     new_DF = pd.DataFrame(new_DF.values[1:], columns=headers)
 
-    new_DF.to_csv("input2.csv", index=False)
+    try:
+        existing_df = pd.read_csv("input2.csv")
+        combined_df = pd.concat([existing_df, new_DF], ignore_index=True)
+        combined_df.to_csv("input2.csv", index=False)
+    except FileNotFoundError:
+        new_DF.to_csv("input2.csv", index=False)
+
     return new_DF
