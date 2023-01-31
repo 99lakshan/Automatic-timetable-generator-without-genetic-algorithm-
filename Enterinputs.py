@@ -7,6 +7,7 @@ LC_list = ['LEC_CODE']
 TS1_list = ['TIME_SLOT1']
 TS2_list = ['TIME_SLOT2']
 TS3_list = ['TIME_SLOT3']
+TS4_list = ['TIME_SLOT4']
 
 
 def inputs(Answer):
@@ -30,10 +31,10 @@ def inputs(Answer):
         TS2_list.append(TS2)
         TS3 = str(input("Enter your Preferred 3rd time slot : "))
         TS3_list.append(TS3)
-    #        TS4 = str(input("Enter your Preferred 4th time slot : "))
-    #        TS4_list.append(TS4)
+        TS4 = str(input("Enter your Preferred 4th time slot : "))
+        TS4_list.append(TS4)
 
-    Input_table = [CC_list, LC_list, TS1_list, TS2_list, TS3_list]
+    Input_table = [CC_list, LC_list, TS1_list, TS2_list, TS3_list, TS4_list]
     # print(Input_table)
 
     DF = pd.DataFrame(Input_table)
