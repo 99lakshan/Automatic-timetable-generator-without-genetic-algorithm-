@@ -89,6 +89,15 @@ third_year_MGMT = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm',
 
 # [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'], [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0], ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
 
+def create_list_for_lecture_time(list_name):
+    if list_name not in globals():
+        globals()[list_name] = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'],
+                                [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],
+                                ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
+        print("The list '" + list_name + "' has been created.")
+    else:
+        print("The list '" + list_name + "' already exists.")
+
 
 def create_list_if_not_exist(list_name):
     if list_name not in globals():
@@ -119,7 +128,9 @@ def store(book_room_L1, detail_raw):
         # print(book_room_L2)
         hall_id = str(book_room_L1[j])
 
+        create_list_for_lecture_time(lecturer_ID)
         create_list_if_not_exist(hall_id)
+
         count = len(detail_raw)
         print('=2=2=2=2=2=2=2=2==3=3=3=3=3 ', count)
         for k in range(2, count):
@@ -132,17 +143,17 @@ def store(book_room_L1, detail_raw):
 
             elif yr_no == 3:
                 year_name = year[2]
-                continue  # temporary adding delete later
+                # continue  # temporary adding delete later
 
             dy = detail_raw[k][:2]  # get the day one by one at a once from the detail raw
             sl = detail_raw[k][3:]  # get the time slot one by one at a once
 
             day_position = day.index(dy)
             slot_position = slot.index(sl)
-
-            halls_list_value = globals()[hall_id][day_position][slot_position]
             g = str(year_name + '_' + degree_programme)
-            # print(g)
+
+            lecturer_list_value = globals()[lecturer_ID][day_position][slot_position]
+            halls_list_value = globals()[hall_id][day_position][slot_position]
             years_list_value = globals()[g][day_position][slot_position]
 
             if year_name != 'third_year':
@@ -155,13 +166,15 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            # print(d)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                # print(d)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'CTEC':
                     if num == 3:
@@ -171,12 +184,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'CSCI':
                     if num == 3:
@@ -186,12 +201,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'GTEC':
                     if num == 3:
@@ -206,17 +223,21 @@ def store(book_room_L1, detail_raw):
                     years_list_value2 = globals()[y][day_position][slot_position]
 
                     if halls_list_value == 0:
-                        if years_list_value1 == 0 & years_list_value2 == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
+                        if lecturer_list_value == 0:
+                            if years_list_value1 == 0 & years_list_value2 == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
 
-                            globals()[z][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[y][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                                globals()[z][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[y][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            num = num + 1
+                                num = num + 1
 
                 if degree_programme == 'DELT':
 
@@ -234,25 +255,32 @@ def store(book_room_L1, detail_raw):
                     years_list_value5 = globals()[x][day_position][slot_position]
 
                     if halls_list_value == 0:
-                        if years_list_value3 == 0 & years_list_value4 == 0 & years_list_value5 == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
+                        if lecturer_list_value == 0:
+                            if years_list_value3 == 0 & years_list_value4 == 0 & years_list_value5 == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
 
-                            globals()[z][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[y][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[x][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                                globals()[z][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[y][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[x][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            num = num + 1
+                                num = num + 1
 
             elif year_name == 'third_year':
+                subject_code = int(detail_raw[0][4:])
+                print(subject_code)
 
                 if degree_programme == 'ENPR':
-                    subject_code = str(detail_raw[0][4:])
+                    subject_code = int(detail_raw[0][4:])
 
-                    if subject_code == '31042':  # Dr. chamli's subject
+                    if subject_code == 31042:  # Dr. chamli's subject
                         if num == 3:
                             continue
                         if credit < 3:
@@ -273,32 +301,33 @@ def store(book_room_L1, detail_raw):
                         years_list_value11 = globals()[d][day_position][slot_position]
 
                         if halls_list_value == 0:
-                            if years_list_value6 == 0 & years_list_value7 == 0 & years_list_value8 == 0 & years_list_value9 == 0 & years_list_value10 == 0 & years_list_value11 == 0:
-                                globals()[hall_id][day_position][slot_position] = detail_raw[0] + h + hall_id
+                            if lecturer_list_value == 0:
+                                if years_list_value6 == 0 & years_list_value7 == 0 & years_list_value8 == 0 & years_list_value9 == 0 & years_list_value10 == 0 & years_list_value11 == 0:
+                                    globals()[hall_id][day_position][slot_position] = detail_raw[0] + h + hall_id
 
-                                globals()[t][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[l][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[y][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[a][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[b][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[d][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
+                                    globals()[t][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[l][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[y][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[a][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[b][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[d][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
 
-                                # d = str(year_name + '_' + degree_programme)
-                                # globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
+                                    # d = str(year_name + '_' + degree_programme)
+                                    # globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
 
-                                num = num + 1
+                                    num = num + 1
 
-                    if subject_code == '33033':  # Dr. pradeep's subject
+                    if subject_code == 33033:  # Dr. pradeep's subject
 
                         if num == 3:
                             continue
-                        if credit < 3:
+                        if credit <= 3:
                             if num == 2:
                                 continue
                         r = str(year_name + '_' + 'ETMP')
@@ -310,21 +339,22 @@ def store(book_room_L1, detail_raw):
                         years_list_value14 = globals()[u][day_position][slot_position]
 
                         if halls_list_value == 0:
-                            if years_list_value12 == 0 & years_list_value13 == 0 & years_list_value14 == 0:
-                                globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                      0] + h + hall_id + h + lecturer_ID
+                            if lecturer_list_value == 0:
+                                if years_list_value12 == 0 & years_list_value13 == 0 & years_list_value14 == 0:
+                                    globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                          0] + h + hall_id + h + lecturer_ID
 
-                                globals()[r][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[o][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
-                                globals()[u][day_position][slot_position] = detail_raw[
-                                                                                0] + h + hall_id + h + lecturer_ID
+                                    globals()[r][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[o][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
+                                    globals()[u][day_position][slot_position] = detail_raw[
+                                                                                    0] + h + hall_id + h + lecturer_ID
 
-                                # d = str(year_name + '_' + degree_programme)
-                                # globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
+                                    # d = str(year_name + '_' + degree_programme)
+                                    # globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
 
-                                num = num + 1
+                                    num = num + 1
 
                 if degree_programme == 'CTNT':
 
@@ -335,12 +365,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'GANI':
 
@@ -351,12 +383,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'SWST':
 
@@ -367,12 +401,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'CTEC':
 
@@ -390,16 +426,21 @@ def store(book_room_L1, detail_raw):
                     years_list_value17 = globals()[r][day_position][slot_position]
 
                     if halls_list_value == 0:
-                        if years_list_value15 == 0 & years_list_value16 == 0 & years_list_value17 == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            globals()[p][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[q][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[r][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                        if lecturer_list_value == 0:
+                            if years_list_value15 == 0 & years_list_value16 == 0 & years_list_value17 == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                globals()[p][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[q][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[r][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'ETMP':
 
@@ -410,12 +451,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'ETIA':
 
@@ -426,12 +469,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'ETST':
 
@@ -442,12 +487,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'ETEC':
 
@@ -465,16 +512,20 @@ def store(book_room_L1, detail_raw):
                     years_list_value20 = globals()[o][day_position][slot_position]
 
                     if halls_list_value == 0:
-                        if years_list_value18 == 0 & years_list_value19 == 0 & years_list_value20 == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            globals()[m][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[n][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[o][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                        if lecturer_list_value == 0:
+                            if years_list_value18 == 0 & years_list_value19 == 0 & years_list_value20 == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                globals()[m][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[n][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[o][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
-                            num = num + 1
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id
+                                num = num + 1
 
                 if degree_programme == 'SCOM':
 
@@ -485,12 +536,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'DSCI':
 
@@ -501,12 +554,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'AINT':
 
@@ -517,12 +572,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'CSEC':
 
@@ -533,12 +590,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'CSCI':
 
@@ -549,12 +608,14 @@ def store(book_room_L1, detail_raw):
                             continue
 
                     if halls_list_value == 0:
-                        if years_list_value == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                        if lecturer_list_value == 0:
+                            if years_list_value == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 if degree_programme == 'MGMT':
 
@@ -576,18 +637,25 @@ def store(book_room_L1, detail_raw):
                     years_list_value25 = globals()[j][day_position][slot_position]
 
                     if halls_list_value == 0:
-                        if years_list_value21 == 0 & years_list_value22 == 0 & years_list_value23 == 0 & years_list_value24 == 0 & years_list_value25 == 0:
-                            globals()[hall_id][day_position][slot_position] = detail_raw[
-                                                                                  0] + h + hall_id + h + lecturer_ID
-                            globals()[v][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[w][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[f][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[i][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            globals()[j][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
+                        if lecturer_list_value == 0:
+                            if years_list_value21 == 0 & years_list_value22 == 0 & years_list_value23 == 0 & years_list_value24 == 0 & years_list_value25 == 0:
+                                globals()[hall_id][day_position][slot_position] = detail_raw[
+                                                                                      0] + h + hall_id + h + lecturer_ID
+                                globals()[v][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[w][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[f][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[i][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                globals()[j][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
 
-                            d = str(year_name + '_' + degree_programme)
-                            globals()[d][day_position][slot_position] = detail_raw[0] + h + hall_id + h + lecturer_ID
-                            num = num + 1
+                                d = str(year_name + '_' + degree_programme)
+                                globals()[d][day_position][slot_position] = detail_raw[
+                                                                                0] + h + hall_id + h + lecturer_ID
+                                num = num + 1
 
                 else:
                     continue
