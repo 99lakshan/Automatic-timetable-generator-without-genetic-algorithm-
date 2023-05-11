@@ -18,6 +18,7 @@ def Get(x, data_new):
     #print("count is : ", count)
 
     arr = np.array(prio_list).reshape(count, 5)
+    print(arr)
 
     return (arr)
 

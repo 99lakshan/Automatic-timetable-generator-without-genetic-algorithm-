@@ -17,7 +17,7 @@ def inputs(Answer):
     print("\ntype 0 in Course code if you finish the process\n")
 
     print("\nThis is the already existing data in the table\n")
-    print(pd.read_csv("input2.csv"))
+    print(pd.read_csv("Data\input2.csv"))
 
     for i in range(0, 1000):
         CC = str(input("Enter your Course Code : "))
@@ -42,7 +42,7 @@ def inputs(Answer):
 
     DF = pd.DataFrame(Input_table)
     new_DF = DF.T
-    print(new_DF)
+    # print(new_DF)
 
     headers = new_DF.iloc[0]
     new_DF = pd.DataFrame(new_DF.values[1:], columns=headers)

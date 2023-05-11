@@ -12,7 +12,7 @@ if Answer == "y":
 else:
     pass
 
-input2 = pd.read_csv("input2.csv")
+input2 = pd.read_csv("Data\input2.csv")
 print(input2)
 # print(input2['LEC_CODE'][0])
 lec_detail = pd.read_csv("Data/instructors1.csv")
@@ -39,7 +39,7 @@ for i in range(0, (len(input2))):
 data_new = input2.copy()
 data_new['prio_level'] = data2
 
-# print(data_new)
+print(data_new)
 # print(len(lec_detail))
 
 # sam_list = []
@@ -47,7 +47,7 @@ data_new['prio_level'] = data2
 for j in range(1, (len(lec_detail) + 1)):
     # print(j)
     out = (Get(j, data_new))
-    # print(out)
+    print(out)
     if len(out) == 0:
         # print("This is empty")
         continue
@@ -164,12 +164,12 @@ with pd.ExcelWriter("TimeTable (Third_Year).xlsx") as writer:
 pd.options.display.max_columns = None
 pd.options.display.width = 1000
 
-print('  First_year_CT', "\n", df_fy_ct, "\n", 'First_year_ET', "\n", df_fy_et, "\n", 'First_year_CS', "\n", df_fy_cs,
-      '\n')
+# print('  First_year_CT', "\n", df_fy_ct, "\n", 'First_year_ET', "\n", df_fy_et, "\n", 'First_year_CS', "\n", df_fy_cs,
+#      '\n')
 
-print("_____________________________________________________________________________________________________________")
+# print("_____________________________________________________________________________________________________________")
 
-print('Second_year_CT', '\n', df_sy_ct, "\n", 'Second_year_ET', '\n', df_sy_et, "\n", 'Second_year_CS', '\n', df_sy_cs)
-print("_____________________________________________________________________________________________________________")
+# print('Second_year_CT', '\n', df_sy_ct, "\n", 'Second_year_ET', '\n', df_sy_et, "\n", 'Second_year_CS', '\n', df_sy_cs)
+# print("_____________________________________________________________________________________________________________")
 
-print('Third_year_ETMP', "\n",df_ty_etmp )
+# print('Third_year_ETMP', "\n",df_ty_etmp )

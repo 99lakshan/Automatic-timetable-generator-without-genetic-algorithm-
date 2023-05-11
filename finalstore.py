@@ -94,9 +94,9 @@ def create_list_for_lecture_time(list_name):
         globals()[list_name] = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'],
                                 [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],
                                 ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-        print("The list '" + list_name + "' has been created.")
-    else:
-        print("The list '" + list_name + "' already exists.")
+        # print("The list '" + list_name + "' has been created.")
+    # else:
+        # print("The list '" + list_name + "' already exists.")
 
 
 def create_list_if_not_exist(list_name):
@@ -104,9 +104,9 @@ def create_list_if_not_exist(list_name):
         globals()[list_name] = [['Day', '8.00am-10.00pm', '10.00am-12.00pm', '1.00pm-3.00pm', '3.00pm-5.pm'],
                                 [' Monday', 0, 0, 0, 0], ['Tuesday', 0, 0, 0, 0], [' Wednesday', 0, 0, 0, 0],
                                 ['Thursday', 0, 0, 0, 0], ['Friday', 0, 0, 0, 0]]
-        print("The list '" + list_name + "' has been created.")
-    else:
-        print("The list '" + list_name + "' already exists.")
+        # print("The list '" + list_name + "' has been created.")
+    # else:
+        # print("The list '" + list_name + "' already exists.")
 
 
 def store(book_room_L1, detail_raw):
@@ -132,7 +132,7 @@ def store(book_room_L1, detail_raw):
         create_list_if_not_exist(hall_id)
 
         count = len(detail_raw)
-        print('=2=2=2=2=2=2=2=2==3=3=3=3=3 ', count)
+        # print("Count : ", count)
         for k in range(2, count):
 
             if yr_no == 1:
@@ -275,7 +275,7 @@ def store(book_room_L1, detail_raw):
 
             elif year_name == 'third_year':
                 subject_code = int(detail_raw[0][4:])
-                print(subject_code)
+                # print(subject_code)
 
                 if degree_programme == 'ENPR':
                     subject_code = int(detail_raw[0][4:])
